@@ -1,0 +1,105 @@
+<!--Codi generador de menu de text en javascript-->
+<!--UOC'98-->
+
+<html>
+
+<head><script>
+<!--
+function mainLoad(mainUrl){
+ parent.em_main.location.href=mainUrl;}
+
+function sublogoLoad(sublogoUrl){
+ parent.sublogo.location.href=sublogoUrl;}
+
+function topLoad(topUrl){
+ top.location.href=topUrl;
+}
+function mouseOver(banner)
+{
+ self.status = banner;
+}
+
+function mouseOut()
+{
+ self.status = "";
+}
+//-->
+</SCRIPT>
+
+</HEAD>
+
+<SCRIPT>
+<!--
+var pares;
+pares = new Array();
+var par;
+
+document.write('<BODY BGCOLOR="#',parent.colorfons,'" LINK="#',parent.colorlink,'" VLINK="#',parent.colorvlink,'" BACKGROUND="fons.gif">');
+document.write('<table ALIGN="center" width="100%" HEIGHT="100%" CELLPADDING="0" CELLSPACING="0">');
+document.write('<tr><td VALIGN="top" ALIGN="center">');
+document.write('<TABLE ALIGN="center" BORDER="0" WIDTH="90%" CELLPADDING="3" CELLSPACING="2">');
+document.write('<tr><td VALIGN="top" ALIGN="center"><A HREF="../../index.html" TARGET="_top" onMouseOver="mouseOver(\'Plana inicial\'); return true;" onMouseOut="mouseOut(); return true;"><IMG SRC="uoc.gif" BORDER="0" ALT="Torna a la portada"></A></TD></TR>');
+
+if(parent.nivell>0){
+	par = parent.pare;
+	pares[0] = par;
+
+	for(var l=1; l<parent.nivell; l++)
+	{
+		par = parent.pastilles[par].pare;
+		pares[l] = par;
+	}
+
+	for(l=parent.nivell-1; l>=0; l--)
+	{	
+		document.write('<TR><TD VALIGN="top" ALIGN="left"');
+		if(parent.color[parent.pastilles[pares[l]].nivell] != 'null') 
+			document.write(' BGCOLOR="#',parent.color[parent.pastilles[pares[l]].nivell]);
+		document.write('"><TABLE WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0"><TR><TD VALIGN="middle" ALIGN="left"><FONT FACE="Arial" SIZE="-2">');
+		document.write('<A HREF="javascript:parent.pare=parent.pastilles[',pares[l],'].pare; parent.nivell=parent.pastilles[',pares[l],'].nivell; location.reload();" onMouseOver="mouseOver(\'Torna al nivell ',parent.pastilles[pares[l]].nivell, '\'); return true;" onMouseOut="mouseOut(); return true;"');
+		document.write('><B>',parent.pastilles[pares[l]].text,'</B></A></FONT></TD>');
+		document.write('<TD ALIGN="right" VALIGN="top"><IMG SRC="fletxa.gif" ALIGN="right" ALT="Torna al nivell ', parent.pastilles[pares[l]].nivell, '" HSPACE="2"></TD></TR></TABLE></TD></TR>');
+	}
+}
+
+for(i=0;i<parent.pastilles.length;i++){
+	if(parent.pastilles[i].nivell==parent.nivell && parent.pastilles[i].pare==parent.pare)
+	{	
+		document.write('<TR><TD VALIGN="top" ALIGN="left"');
+		if(parent.color[parent.nivell] != 'null')
+			document.write(' BGCOLOR="#',parent.color[parent.nivell]);
+		document.write('"><FONT FACE="Arial" SIZE="-2"><B>');
+		if(parent.pastilles[i].enllac.toLowerCase()!='null')
+		{
+			document.write('<A HREF="',parent.pastilles[i].enllac,'" TARGET="',parent.pastilles[i].objectiu,'" onMouseOver="mouseOver(\'',parent.pastilles[i].status,'\'); return true;" onMouseOut="mouseOut(); return true;"');
+			if(parent.pastilles[i].branca)
+				document.write(' onClick="parent.pare=',i,'; parent.nivell=parent.nivell+1; location.reload();"');
+			document.write('>');
+		}
+	
+		else
+		{
+		if(parent.pastilles[i].branca)
+			document.write('<A HREF="javascript:parent.pare=',i,'; parent.nivell=parent.nivell+1; location.reload();" onMouseOver="mouseOver(\'',parent.pastilles[i].status ,'\'); return true;" onMouseOut="mouseOut(); return true;">');
+		}
+		document.write(parent.pastilles[i].text,'</A></B></FONT></TD></TR>');
+	}
+}
+document.write('</TABLE>');
+document.write('</td></tr><tr>');
+
+document.write('<td VALIGN="bottom" ALIGN="center">');
+	if ((document.location.href.substring(0,4)) == "file"){
+		document.write("<A HREF=javascript:top.close(); onMouseOver=mouseOver('Sortir'); return true;><IMG SRC='sortir.gif' name='sale' ALT='Sortir' BORDER='0'></A>");
+	} else {	
+		document.write("<A HREF=javascript:top.close(); onMouseOver=mouseOver('Sortir'); return true;><IMG SRC='sor.gif' name='sale' ALT='Sortir' BORDER='0'></A><A HREF='../../UOCMViewer/desar/opcio3.html' TARGET='em_main'><IMG SRC='des_men.gif' name='desa' ALT='Desar' BORDER='0'></A>");
+	}
+document.write('</td></tr>');
+document.write('</table>');
+document.write('</BODY>');
+
+//-->
+</SCRIPT>
+
+
+</HTML>

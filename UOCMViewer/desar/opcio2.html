@@ -1,0 +1,74 @@
+<html>
+<head>
+  <title>Desar dels materials didàctics de la UOC</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <META NAME="idioma" CONTENT="cat">
+  <SCRIPT SRC="../res/cap.js"></SCRIPT>
+  <script src="download.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="../res/css/styleICV.css">
+</head>
+<body marginwidth=0 marginheight=0 topmargin=0 leftmargin=0 class="bg0">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" valign="top">
+  <tr>  
+  <td valign="top">
+           <script>
+           document.writeln('<span class="titol">' + parent.document.title + '</span>');
+           </script>
+           <br>
+     <span class="subtitol">DESAR MATERIAL</span>
+  </td>
+  </tr>
+  <tr>
+  <td valign="top">
+     <table width="98%" cellspacing="1" cellpadding="4" border="0">
+     <tr><td class="bg0" align="left">
+     <a href="pas1.html" class="fnt112b">Enrere</a><span class="fnt112b">&nbsp;>&nbsp;Material dividit en volums</span>
+     </td></tr>
+     <tr><td>
+     <span class="fnt112">
+     1. Fes clic sobre cadascun dels fitxers que apareixen a continuació i segueix les instruccions. Recorda que el nom del fitxers pertanyen al codi de l'assignatura.</span></td>
+     </tr>
+     <tr><td>
+     <span class="fnt112">
+     2. Cerca el fitxer "<script>document.write(volum[0]);</script>" a la carpeta on l'has desat, fes clic sobre aquest i segueix les instruccions que t'indica el programa d'instal·lació.</span></td>
+     </tr>
+     </table>
+  </td></tr>
+  <tr>
+  <td valign="top">
+     <table width="98%" border="0" cellspacing="4" cellpadding="0" class="bg0">
+      <tr><td>      
+      <table width="100%" border="0" cellspacing="1" cellpadding="0" class="bg0">
+        <script>
+        for( i = 0; i < volum.length ; i++ )
+        { 
+          document.write( '<tr class="bg0">' );
+          document.write( '<td width="50">&nbsp;</td>' );
+          document.write( '<td valign="bottom"><span class="fnt112">Fitxer&nbsp;' + eval( i + 1 ) + ':</span></td>' );
+          document.write( '<td valign="bottom" width="11"><a href="parts/' + volum[i] + '" class="fnt111"><img src="../res/img/disquette.gif" border="0" width="11" height="11"></a></td>' );
+          document.write( '<td valign="bottom">&nbsp;&nbsp;<a href="parts/' + volum[i] +  '" class="fnt111">' + volum[i] + '</a><span class="fnt111">&nbsp;(' + volum_mb[i] + ')</span></td>' );
+          document.write( '</tr>' );
+        }
+        </script>
+
+        </table>
+      </td></tr>
+      <tr class="bg0"> 
+      <td>          
+       <!--<table width="100%" border="0" cellspacing="1" cellpadding="6" class="bg0">
+       <tr><td>&nbsp;</td></tr>
+       <tr class="bg0"><td><span class="fnt112b">         
+          NOTA:</span><span class="fnt112">&nbsp;Obre el fitxer executable de la carpeta a on has desat el fitxer. Segueix les instruccions que t'indica el programa d'instal·lació.
+          </span>
+          </td></tr>
+       </table>-->
+      </td>
+      </tr>
+      </table>
+  </td>
+  </tr>
+</table>
+
+</body>
+</html>

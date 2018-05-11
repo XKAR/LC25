@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<TITLE>Menu</TITLE>
+
+<SCRIPT SRC="../cap.js"></SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="#d8d2cc" BACKGROUND="fons.gif">
+<TABLE HEIGHT="100%" WIDTH="100%" CELLPADDING="0" CELLSPACING="0">
+<TR><TD VALIGN="top" ALIGN="center">
+
+<SCRIPT>
+if (!navigator.javaEnabled()) top.em_menu.location='js_frameset.html';
+else
+{
+	var navegador = navigator.appName;
+
+	document.write('<APPLET codebase=\"../../cls\" code=menu_materials.class width=150 height=390 ARCHIVE=\"menu_materials.jar\">');
+	document.write('<PARAM name=cabbase value=\"menu_materials.cab\">');
+	document.write('<PARAM name=dades value=\"dades_mat.dat\">');
+	document.write('<PARAM name=logoURL value=\"../index.html\">');
+
+	document.write('<PARAM NAME=colorFontNivell0 value=\"0,0,0\">');
+	document.write('<PARAM NAME=colorFontNivell1 value=\"60,60,60\">');
+	document.write('<PARAM NAME=colorFontNivell2 value=\"80,80,80\">');
+	document.write('<PARAM NAME=colorFontNivell3 value=\"180,180,180\">');
+	document.write('<PARAM NAME=colorFontNivell4 value=\"250,250,250\">');
+
+	document.write('<PARAM name=imatgeFonsName value=\"fons.gif\">');
+	document.write('<PARAM name=icons value=\"0\">');
+	document.write('<PARAM name=colorFons value=\"166,202,240\">');
+	document.write('<PARAM name=colorFontMouseOver value=\"30,30,255\">');
+	document.write('<PARAM name=colorActiu value=\"210,0,0\">');
+	document.write('<PARAM name=tamanyFont value=\"11\">');
+	document.write('<PARAM name=nomFont value=\"Arial\">');
+	document.write('<PARAM name=tipusFont value=\"1\">');
+	document.write('<PARAM name=cellPadding value=\"2\">');
+	document.write('<PARAM name=alignText value=\"0\">');
+	document.write('<PARAM name=cellSpacing value=\"2\">');
+	document.write('<PARAM name=mouseOverActiu value=\"1\">');
+	document.write('<PARAM name=fletxaActiva value=\"1\">');
+	document.write('<PARAM name=inici value=\"80\">');
+	document.write('<PARAM name=altLogo value=\"80\">');
+	if (navegador=="Netscape")
+	document.write('<PARAM name=navegador value=\"Netscape\">');
+	else
+	document.write('<PARAM name=navegador value=\"Microsoft Internet Explorer\">');
+	document.write('</APPLET>');
+}
+</SCRIPT>
+</TD></TR>
+
+<TR><TD VALIGN="bottom" ALIGN="center">
+
+<SCRIPT>
+	if ((document.location.href.substring(0,4)) == "file"){
+		document.write("<A HREF=javascript:top.close(); onMouseOver=mouseOver('Sortir'); return true;><IMG SRC='sortir.gif' name='sale' ALT='Sortir' BORDER='0'></A>");
+	} else {	
+		document.write("<A HREF=javascript:top.close(); onMouseOver=mouseOver('Sortir'); return true;><IMG SRC='sor.gif' name='sale' ALT='Sortir' BORDER='0'></A><A HREF=javascript:parent.oWin('../../UOCMViewer/desar/opcio3.html','em_save',600,430,'yes','no','yes','no'); onMouseOver=mouseOver('Desar'); return true;><IMG SRC='des_men.gif' name='desa' ALT='Desar' BORDER='0'></A>");
+	}
+</SCRIPT>
+
+</TD></TR>
+</TABLE>
+</BODY>
+</HTML>
+
+

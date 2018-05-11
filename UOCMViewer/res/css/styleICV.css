@@ -1,0 +1,343 @@
+﻿	.bg0	{	background-color:	#FFFFFF;	}
+	.bg1	{	background-color:	#2E2A69;	}
+	.bg2	{	background-color:	#C0C4D2;	}
+	.bg3	{	background-color:	#EAEEF0;	}	
+	.bg4	{	background-color:	#8189A5;	}
+	.bg5	{	background-color:	#EEEDED;	}	
+	.bg6	{	background-color:	#F7F6F6;	}	
+	.bg7	{	background-color:	#F3EFEE;	}	
+	.bg8	{	background-color:	#E2E4EB;	}
+	.bg9	{	background-color:	#666564;	}
+	.bg10   {	background-color:	#FF9900;	}
+	.bg11   {	background-color:	#E7DFDE;	}
+	.bg12	{	background-color:	#8189A5;	padding:9px 5px 5px 5px;	}
+	.bg13   {	background-color:	#CCC000;	}
+	.bg14   {	background-color:	#FFFFE5;	}
+	.bg15   {	background-color:	#909090;	}
+	.bg16   {	background-color:	#E2A226;	}
+	.bg17   {	background-color:	#F4DAA9;	}	
+	.bg18   {	background-color:	#ABB0C3;	}	
+	.bg19   {	background-color:	#FAEED5;	}
+	.bg20	{	background-color:	#EABE67;	}
+
+	.fnt92	 	{	font-size:		9px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#000000;	}
+					
+	.fnt102	 	{	font-size:		10px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#000000;	}
+
+	.fnt110 	{	font-size:		13px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#FFFFFF;
+					}
+	.copyR 	{	font-size:		11px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#FFFFFF;
+					}
+	
+					
+	.fnt110b 	{	font-size:		13px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#FFFFFF;	}	
+					
+	.fnt111 	{	font-size:		11px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#232650; }													
+
+	.fnt111b	{	font-size:		11px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#232650;	
+					text-decoration: none;
+					}
+	.fnt111bbis	{	font-size:		11px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#232650;	
+					}
+
+	.fnt111s 	{	font-size:		11px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#232650;
+					text-decoration: none; }	
+														
+	.fnt112 	{	font-size:		11px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#000000; }
+											
+	.fnt112b 	{	font-size:		11px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#000000;	}
+					
+	.fnt112bv 	{	font-size:		11px;
+					font-weight:	bolder;	
+					font-family:	Verdana, Arial, Helvetica, sans-serif;
+					color:			#000000;	}					
+										
+	.fnt112s	{	font-size:		11px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#000000;
+					text-decoration: none; }	
+					
+	.fnt112bs 	{	font-size:		11px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#000000;
+					text-decoration: none; }
+					
+	.fnt113 	{	font-size:		11px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#BF1E03;	}
+					
+	.fnt113b 	{	font-size:		11px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#BF1E03;	}					
+					
+	.fnt114 	{	font-size:		12px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#5D5F60;}
+					
+	.fnt115 	{	font-size:		11px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#BF1E03;}
+					
+	.fnt115b	{	font-size:		11px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#BF1E03;}
+					
+	.fnt116 	{	font-size:		11px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#E7DFDE;}										
+
+	.fnt121 	{	font-size:		12px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#232650;	}
+					
+	.fnt121b 	{	font-size:		12px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#232650;	}
+					
+	.fnt122b 	{	font-size:		12px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#000000;	}																			
+
+	.fnt126b 	{	font-size:		12px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#999999;}
+	.fnt141 	{	font-size:		90%;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#232650;	}
+
+	.fnt152b 	{	font-size:		15px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#000000;	}
+	.fnt160b 	{	font-size:		16px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#ffffff;	}										
+        .fnt181b        {
+	                        font-family: Arial, Helvetica, sans-serif;
+	                        font-weight: bold;
+	                        color: #000000;
+	                        font-size: 18px;        }
+					
+		
+	a.fnt110:active, a.fnt110:visited, a.fnt110:hover, a.fnt110:link {	color: #FFFFFF; }
+	a.copyR:active, a.copyR:visited, a.copyR:hover, a.copyR:link {	color: #FFFFFF; }
+	a.sfnt110:active, a.sfnt110:visited, a.sfnt110:hover, a.sfnt110:link {	color: #232C50; }
+	
+	a.fnt121:active, a.fnt121:visited, a.fnt121:hover, a.fnt121:link {  color: #232C50; }
+	a.sfnt121:active, a.sfnt121:visited, a.sfnt121:hover, a.sfnt121:link {  color: #232C50; }
+	a.fnt121b:active, a.fnt121b:visited, a.fnt121b:hover, a.fnt121b:link {  color: #232C50; }
+	a.sfnt121b:active, a.sfnt121b:visited, a.sfnt121b:hover, a.sfnt121b:link {font-size: 12px; font-family:    Arial, Verdana, Helvetica, sans-serif; font-weight:    bold; color: #232C50; }
+	
+	a.fnt114:active, a.fnt114:visited, a.fnt114:hover, a.fnt114:link {  color: #5D5F60; }
+	
+	a.fnt111:active, a.fnt111:visited, a.fnt111:hover, a.fnt111:link {  color: #232C50; }
+	a.fnt111b:active, a.fnt111b:visited, a.fnt111b:hover, a.fnt111b:link {  color: #232C50; }
+	a.fnt111bbis:active, a.fnt111b:visited, a.fnt111b:hover, a.fnt111b:link {  color: #232C50; }
+		
+	a.fnt112:active, a.fnt112:visited, a.fnt112:link {  color: #000000; }
+	a.fnt112:hover {  color: #232C50; }	
+	a.fnt112b:active, a.fnt112b:visited, a.fnt112b:link {  color: #000000; }
+	a.fnt112b:hover {  color: #232C50; }	
+	a.fnt112s:active, a.fnt112s:visited, a.fnt112s:link {  color: #000000; }
+	a.fnt112s:hover {  color: #232C50; }	
+	a.fnt112bs:active, a.fnt112bs:visited, a.fnt112bs:link {  color: #000000; }	
+	a.fnt112bs:hover {  color: #232C50; }
+	
+	a.fnt113:active, a.fnt113:visited, a.fnt113:hover, a.fnt113:link {  color: #BF1E03; }	
+	a.fnt113b:active, a.fnt113b:visited, a.fnt113b:hover {  color: #BF1E03; }
+	a.fnt113b:link {  color: #BF1E03; text-decoration: none; }
+
+	a.fnt115:active, a.fnt115:visited, a.fnt115:hover, a.fnt115:link {  color: #BF1E03;}
+	
+	.stitol1	{	background-color: #FF9900;	}
+	.stitol2	{	background-color: #FF9900;	}
+
+        .msel1    {     background-color: #FF9900; }
+        .mnotsel1 {     background-color: #C0C4D2; } 
+	
+	.msel2    {     background-color: #FFCA79; }
+	.mnotsel2 {     background-color: #EEEDED; }
+
+	.msel3        { background-color: #FFE6BF; }
+	.mnotsel3     { background-color: #F7F7F7; }
+
+        .fntmsel1 { font-size:  11px; font-weight: normal; font-family: Arial, Helvetica, sans-serif; color: #232C50; }
+        .fntmsel2 { font-size:  11px; font-weight: normal; font-family: Arial, Helvetica, sans-serif; color: #232C50; }
+	.fntmsel3 { font-size:	11px; font-weight: normal; font-family:	Arial, Helvetica, sans-serif; color: #232C50; }
+	.fntmnsel2 { font-size: 11px; font-weight: normal; font-family: Arial, Helvetica, sans-serif; color: #232C50; }
+			   
+        .fntmnsel1{ font-size:	11px;  font-weight: bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#000000;
+					text-decoration: none; }	
+					
+        .fntmnsel3{	font-size:		11px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#000000;
+					text-decoration: none; }
+
+        a.fntmsel1:active, a.fntmsel1:visited, a.fntmsel1:hover, a.fntmsel1:link { color: #000000; text-decoration: none; }
+        a.fntmsel2:active, a.fntmsel2:visited, a.fntmsel2:hover, a.fntmsel2:link { color: #000000; text-decoration: none; }
+	a.fntmsel3:active, a.fntmsel3:visited, a.fntmsel3:hover, a.fntmsel3:link { color: #000000; text-decoration: none; }
+  	a.fntmnsel1:active, a.fntmnsel1:visited, a.fntmnsel1:hover, a.fntmnsel1:link { color: #000000; text-decoration: none; }
+  	a.fntmnsel2:active, a.fntmnsel2:visited, a.fntmnsel2:hover, a.fntmnsel2:link { color: #000000; text-decoration: none; }
+  	a.fntmnsel3:active, a.fntmnsel3:visited, a.fntmnsel3:hover, a.fntmnsel3:link { color: #000000; text-decoration: none; }
+
+	.crumb { font-size: 11px; font-weight: normal; font-family: Arial, Helvetica, sans-serif; color: #666666; }
+	
+	 <!-- pastilla assignatura{  }
+	.whiteLink { font-size: 11px; font-weight: bolder; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; }
+	
+	.groc     {background-color: #FFC300;}
+	.crema    {background-color: #E7DEDF;}
+	.gris     {background-color: #C0C4D2;}
+	.grislght {background-color: #E1E0E0;}	
+
+	.fnt_cal  { font-size: 11px; font-weight: normal; font-family: Arial, Helvetica, sans-serif; color: #666666; background-color: #FFFFFF; text-align: center}
+	.fnt_calb { font-size: 11px; font-weight: bolder; font-family: Arial, Helvetica, sans-serif; color: #666666; background-color: #FFFFFF; text-align: center}
+	.red     {background-color: #FF0000;}
+	.green   {background-color: #00FF00;}
+	.ptgreen {background-color: #00CC33;}
+        .pttwo   {background-color: #0099FF;}
+        .ptthree {background-color: #D181A7;}
+	.ptsix     {background-color: #333333;}
+	.ptseven   {background-color: #FF6600;}
+	.pteight   {background-color: #993300;}
+	.ptnine   {background-color: #000066;}
+
+.cosDialegUOC
+{
+                /* per netscape */
+                position:absolute;
+                top: 50;
+}
+
+.capDialegUOC {
+                /* per netscape */
+                position:absolute;
+                top:0;
+                left:0;
+}
+
+        <!-- pla de treball{  }
+        .whiteLinks { font-size: 11px; font-weight: bolder; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; text-decorat
+ion: none; }
+
+        .ptges        { background-color:       #008000;        }
+        .ptpec        { background-color:       #FF0000;        }
+        .ptsolucion   { background-color:       #FF0000;        }
+        .ptpractica   { background-color:       #0099FF;        }
+        .ptdebate     { background-color:       #FF00FF;        }
+        .ptactividad  { background-color:       #868686;        }
+
+        .ptfcpac      { background-color:       #008000;        }
+        .ptfcpec      { background-color:       #FF0000;        }
+        .ptfcdebat    { background-color:       #00FF00;        }
+        .ptfcpractica { background-color:       #E0E7E0;        }
+        .ptfcexercici { background-color:       #FFFF77;        }
+        .ptfaltres    { background-color:       #90C800;        }
+
+
+        .ptdtpac      { background-color:       #FFDA11;        }
+        .ptdtpec      { background-color:       #FF0000;        }
+        .ptdtdebat    { background-color:       #00FF00;        }
+        .ptdtpractica { background-color:       #E0E7E0;        }
+        .ptdtexercici { background-color:       #FFF8DC;        }
+        .ptdtfaltres  { background-color:       #FFFD7C;        }
+
+/* afegit */
+        .subtitol        {
+	                        font-family: Arial, Helvetica, sans-serif;
+	                        font-weight: bold;
+	                        color: #E2A226;
+	                        font-size: 16px;        }
+	                        
+        .titol        {
+	                        font-family: Arial, Helvetica, sans-serif;
+	                        font-weight: bold;
+	                        color: #2F396A;
+	                        font-size: 16px;        }
+	                        
+			li {list-style-position: outside; list-style-type: none;}
+			li.contentItem {list-style-type: none; display: none;}
+			li.toolbarItem {float: left;}
+			li.end { list-style-type: none;}
+			.submenu {display: none; margin-top: 0; margin-bottom: 0;}
+			.toolbar {display: none;}
+			li.titolM {list-style-type: none; display: none;}
+			ul.crossItemList {margin: 0 5px 0 10px; padding: 0 0 0 0;}
+			li.crossItem {list-style-type: none; margin: 8px 0 0 0;}
+			.desplegat {display: none;}
+			ul.breadcrumb {margin: 0 0 0 20px; padding: 0 0 0 0;}
+			ul.toolbarList {margin: 0 0 0 20px; padding: 0 0 0 0;}
+			ul.modulList {margin: 20px 10px 0 0; padding: 0 0 0 0;}
+			.openMenu { display: none; }
+			.moduls 	{	font-size:		12px;
+					font-weight:	bolder;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#FFFFFF;	}
+			a.moduls:active, a.moduls:visited, a.moduls:hover, a.moduls:link {  color: #FFFFFF; }
+			.boto {background-color: #F4DAA9; border: 1px solid #000000;}
+	                .container {display: none; margin: 0 0 0 0}
+	                .notepad {
+			background-color:	#FFFFFF;
+			background-image: 	url(../img/senefa.gif);
+			background-repeat: 	repeat-y;
+	                }
+	                .menuFrame {border-bottom:2px solid #000000; cursor:n-resize;}
+	                .noUnder {text-decoration: none;}
+	                .searchText { font-size:		12px;
+					font-weight:	normal;	
+					font-family:	Arial, Verdana, Helvetica, sans-serif;
+					color:			#232650;
+				}
+	                li.searchListItem {list-style-type: disc;}
+	                ul.searchList {list-style-type: disc; margin: 10px 100px 10px 25px;}

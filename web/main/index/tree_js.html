@@ -1,0 +1,184 @@
+<HTML>
+<SCRIPT>
+<!--  to hide script contents from old browsers
+
+var fontsize = "-1";
+
+function mouseOver(banner)
+{
+	self.status = banner;
+}
+
+function mouseOut()
+{
+	self.status = "";
+}
+
+function omple_fills(conjunt)
+{
+	var comp;
+	for(var index = 0; index < conjunt.length; index++)
+	{
+		if(conjunt[index].icona > 0)
+		{
+			comp = 0;
+			for(var i=index+1; i<conjunt.length; i++)
+			{
+				if(conjunt[i].pare == conjunt[index].id)
+				{
+					conjunt[index].fills[comp] = conjunt[i].id;
+					comp++;
+				}
+			}
+		}
+		else
+		{
+			var retString = "";
+			retString = '<img src="img/doc.gif" alt="Obre document" BORDER="0"\n>';
+  			retString = retString + '<td nowrap><FONT FACE = "Arial" SIZE="' + fontsize + '">';
+			if(conjunt[index].enllac != "null")
+		      	retString = retString + '<A href="' + conjunt[index].enllac + '" target="' + conjunt[index].objectiu + '" onMouseOver="mouseOver(\'' + conjunt[index].status + '\'); return true;" onMouseOut="mouseOut(); return true">';
+			retString = retString + conjunt[index].text + '</A></font>';
+			conjunt[index].string = retString;
+		}
+	}
+}
+
+function redrawNode(conjunt, index, lastNode, leftSide)
+{
+	var elem;
+	elem = conjunt[index];
+	document.write("<table border=0 cellspacing=0 cellpadding=0>\n");
+	document.write("<tr>\n<td valign = middle nowrap>\n");
+
+	document.write(leftSide);
+	if (index>0)
+		if (lastNode) //the last 'brother' in the children array
+		{
+      		document.write('<img src="img/lastnode.gif">');
+      		leftSide = leftSide + '<img src="img/blank.gif">'; 
+    		}
+    		else
+    		{
+    		  	document.write('<img src="img/node.gif">');
+    		  	leftSide = leftSide + '<img src="img/vertline.gif">';
+    		}
+
+	displayIconAndLabel(elem);
+  	document.write('</table>\n\n');
+  	
+	var len = elem.fills.length;
+	if (elem.icona == 2 && len  > 0)
+  	{
+		var elem2;
+      	for (var i=0; i<len; i++) 
+      	{
+			elem2 = conjunt[elem.fills[i]];
+			if(elem2.icona > 0)
+			{
+				if (i == (len - 1))
+				{
+					redrawNode(conjunt, elem2.id, 1, leftSide);
+				}
+				else
+				{
+ 					redrawNode(conjunt, elem2.id, 0, leftSide);
+				}
+			}
+      	    
+			else
+			{
+				document.write('<table border=0 cellspacing=0 cellpadding=0 valign=middle>');
+		          	document.write('<tr><td nowrap>');
+      	    		document.write(leftSide);
+      	    		if (i == (len - 1))
+      	        		document.write('<img src="img/lastnode.gif">');
+      	    		else
+      	        		document.write('<img src="img/node.gif">');
+      	    		document.write('</td><td>');
+    	      		document.write(elem2.string);
+     		     		document.write('</tr>');
+          			document.write('</table>');
+      		}
+  		}
+	}
+}
+
+function displayIconAndLabel(elem)
+{
+  	document.write('<A href="javascript:openBranch(\'' + elem.id + '\')"');
+  	if (elem.icona == 2)
+  	{
+  	  	document.write(' onMouseOver="mouseOver(\'Tancar carpeta\'); return true;" onMouseOut="mouseOut(); return true;"><img src=');
+     		if (elem.id == 0)
+     		{
+     			document.write('"img/top.gif" border=0></a>');
+     		}
+     		else
+     		{
+    			document.write('"img/openfolder.gif" border=0></a>');
+     		}
+  	}
+  	else
+  	{
+     		document.write('onMouseOver="mouseOver(\'Obrir carpeta\'); return true" onMouseOut="mouseOut(); return true;"><img src=');
+     		if (elem.id == 0)
+     		{
+     			document.write('"img/top.gif" border=0></a>');
+     		}
+     		else
+     		{
+     			document.write('"img/closedfolder.gif" border=0></a>');
+     		}
+  	}
+  	document.write('<td valign=middle align=left nowrap>');
+  	document.write('<FONT FACE="Arial" SIZE="' + fontsize + '">');
+  	if(elem.enllac != "null")
+	document.write('<A HREF="' + elem.enllac + '" target="' + elem.objectiu + '" onMouseOver="mouseOver(\'' + elem.status + '\'); return true;" onMouseOut="mouseOut(); return true;">');
+  	document.write(elem.text + '</A></FONT>');
+}
+
+//**********************
+// Recursive functions
+
+//when a parent is closed all children also are
+function openCloseFolders(conjunt, index)
+{
+	var i=0;
+	var elem;
+
+	elem = conjunt[index];
+	if(elem.icona == 2)
+	{
+		/*for (i=0; i< elem.fills.length; i++)
+      		openCloseFolders(conjunt, elem.fills[i]);*/
+	    	elem.icona = 1;
+	}
+	else if(elem.icona == 1)
+	{
+		elem.icona = 2;
+	}
+}
+
+function openBranch(branchId)
+{
+  openCloseFolders(parent.elements, branchId);
+  timeOutId = setTimeout("location.reload()",100);
+}
+
+omple_fills(parent.elements);
+
+//-->
+</SCRIPT>
+</HEAD>
+
+<SCRIPT>
+<!--
+
+document.write('<BODY BGCOLOR="#FFFFFF">\n');
+redrawNode(parent.elements, 0, 1, "");
+document.write('</BODY>');
+
+//-->
+</SCRIPT>
+</HTML>

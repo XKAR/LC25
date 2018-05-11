@@ -1,0 +1,110 @@
+<HTML>
+<SCRIPT>
+function pastilla(nivell, pare, branca, text, enllac, objectiu, status){
+	this.nivell = nivell;
+	this.pare = pare;
+this.branca = branca;
+	this.text = text;
+	this.enllac = enllac;
+	this.objectiu = objectiu;
+	this.status = status;
+}
+var pare=0;
+var nivell=0;
+var pastilles;
+var color;
+var colorfons='ffffff';
+var colorlink='000000';
+var colorvlink='000080';
+color=new Array('null','null','null','null');
+pastilles=new Array();
+pastilles[0] = new pastilla(0,0,1,"Recollida d'informaci&oacute; i resum","../main/m1/portada.html","em_main","Recollida d\\\'informaci&oacute; i resum");
+pastilles[1] = new pastilla(0,0,1,"El comentari de text","../main/m2/portada.html","em_main","El comentari de text");
+pastilles[2] = new pastilla(0,0,1,"Els textos expositius","../main/m3/portada.html","em_main","Els textos expositius");
+pastilles[3] = new pastilla(0,0,1,"Llenguatge i mitjans de comunicaci&oacute;","../main/m4/portada.html","em_main","Llenguatge i mitjans de comunicaci&oacute;");
+pastilles[4] = new pastilla(0,0,1,"Llenguatge administratiu","../main/m5/portada.html","em_main","Llenguatge administratiu");
+pastilles[5] = new pastilla(0,0,1,"Textos literaris","../main/m6/portada.html","em_main","Textos literaris");
+pastilles[6] = new pastilla(1,0,1," Comprensi&oacute; lectora","null","em_main","Comprensi&oacute; lectora");
+pastilles[7] = new pastilla(1,0,1," Expressi&oacute; escrita","null","em_main","Expressi&oacute; escrita");
+pastilles[8] = new pastilla(1,0,1," Ortografia","null","em_main","Ortografia");
+pastilles[9] = new pastilla(1,0,1," Morfologia","null","em_main","Morfologia");
+pastilles[10] = new pastilla(1,0,1," Sintaxi","null","em_main","Sintaxi");
+pastilles[11] = new pastilla(1,0,1," L&egrave;xic","null","em_main","L&egrave;xic");
+pastilles[12] = new pastilla(1,1,1," Ortografia","null","em_main","Ortografia");
+pastilles[13] = new pastilla(1,1,1," Morfologia","null","em_main","Morfologia");
+pastilles[14] = new pastilla(1,1,1," Sintaxi","null","em_main","Sintaxi");
+pastilles[15] = new pastilla(1,1,1," L&egrave;xic","null","em_main","L&egrave;xic");
+pastilles[16] = new pastilla(1,2,1," Comprensi&oacute; lectora","null","em_main","Comprensi&oacute; lectora");
+pastilles[17] = new pastilla(1,2,1," Expressi&oacute; escrita","null","em_main","Expressi&oacute; escrita");
+pastilles[18] = new pastilla(1,2,1," Ortografia","null","em_main","Ortografia");
+pastilles[19] = new pastilla(1,2,1," Morfologia","null","em_main","Morfologia");
+pastilles[20] = new pastilla(1,2,1," Sintaxi","null","em_main","Sintaxi");
+pastilles[21] = new pastilla(1,2,1," L&egrave;xic","null","em_main","L&egrave;xic");
+pastilles[22] = new pastilla(1,3,1," Comprensi&oacute; lectora","null","em_main","Comprensi&oacute; lectora");
+pastilles[23] = new pastilla(1,3,1," Expressi&oacute; escrita","null","em_main","Expressi&oacute; escrita");
+pastilles[24] = new pastilla(1,3,1," Ortografia","null","em_main","Ortografia");
+pastilles[25] = new pastilla(1,3,1," Morfologia","null","em_main","Morfologia");
+pastilles[26] = new pastilla(1,3,1," Sintaxi","null","em_main","Sintaxi");
+pastilles[27] = new pastilla(1,3,1," L&egrave;xic","null","em_main","L&egrave;xic");
+pastilles[28] = new pastilla(1,4,1," Comprensi&oacute; lectora  i expressi&oacute; escrita","null","em_main","Comprensi&oacute; lectora i expressi&oacute; escrita");
+pastilles[29] = new pastilla(1,4,1," Ortografia","null","em_main","Ortografia");
+pastilles[30] = new pastilla(1,4,1," Morfologia","null","em_main","Morfologia");
+pastilles[31] = new pastilla(1,4,1," Sintaxi","null","em_main","Sintaxi");
+pastilles[32] = new pastilla(1,4,1," L&egrave;xic","null","em_main","L&egrave;xic");
+pastilles[33] = new pastilla(1,5,1," Comprensi&oacute; lectora","null","em_main","Comprensi&oacute; lectora");
+pastilles[34] = new pastilla(1,5,1," Expressi&oacute; escrita","null","em_main","Expressi&oacute; escrita");
+pastilles[35] = new pastilla(1,5,1," Ortografia","null","em_main","Ortografia");
+pastilles[36] = new pastilla(1,5,1," Morfologia","null","em_main","Morfologia");
+pastilles[37] = new pastilla(1,5,1," Sintaxi","null","em_main","Sintaxi");
+pastilles[38] = new pastilla(1,5,1," L&egrave;xic","null","em_main","L&egrave;xic");
+pastilles[39] = new pastilla(2,6,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m1/v1_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[40] = new pastilla(2,6,0,"  a+a+","../main/m1/v1_2.html","em_main","a+a+");
+pastilles[41] = new pastilla(2,7,0,"  a+a+","../main/m1/v2_1.html","em_main","a+a+ ");
+pastilles[42] = new pastilla(2,8,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m1/v3_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[43] = new pastilla(2,9,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m1/v4_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[44] = new pastilla(2,9,0,"  a+a+","../main/m1/v4_2.html","em_main","a+a+");
+pastilles[45] = new pastilla(2,10,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m1/v5_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[46] = new pastilla(2,10,0,"  a+a+","../main/m1/v5_2.html","em_main","a+a+");
+pastilles[47] = new pastilla(2,11,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m1/v6_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[48] = new pastilla(2,11,0,"  a+a+","../main/m1/v6_2.html","em_main","a+a+");
+pastilles[49] = new pastilla(2,12,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m2/v1_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[50] = new pastilla(2,13,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m2/v2_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[51] = new pastilla(2,13,0,"  a+a+","../main/m2/v2_2.html","em_main","a+a+");
+pastilles[52] = new pastilla(2,14,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m2/v3_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[53] = new pastilla(2,15,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m2/v4_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[54] = new pastilla(2,16,0,"  a+a+","../main/m3/v1_1.html","em_main","a+a+");
+pastilles[55] = new pastilla(2,17,0,"  a+a+","../main/m3/v2_1.html","em_main","a+a+");
+pastilles[56] = new pastilla(2,18,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m3/v3_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[57] = new pastilla(2,19,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m3/v4_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[58] = new pastilla(2,20,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m3/v5_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[59] = new pastilla(2,20,0,"  a+a+","../main/m3/v5_2.html","em_main","a+a+");
+pastilles[60] = new pastilla(2,21,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m3/v6_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[61] = new pastilla(2,22,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m4/v1_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[62] = new pastilla(2,22,0,"  a+a+","../main/m4/v1_2.html","em_main","a+a+");
+pastilles[63] = new pastilla(2,23,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m4/v2_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[64] = new pastilla(2,23,0,"  a+a+","../main/m4/v2_2.html","em_main","a+a+");
+pastilles[65] = new pastilla(2,24,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m4/v3_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[66] = new pastilla(2,25,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m4/v4_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[67] = new pastilla(2,26,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m4/v5_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[68] = new pastilla(2,27,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m4/v6_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[69] = new pastilla(2,27,0,"  a+a+","../main/m4/v6_2.html","em_main","a+a+");
+pastilles[70] = new pastilla(2,28,0,"  a+a+","../main/m5/v1_1.html","em_main","a+a+");
+pastilles[71] = new pastilla(2,29,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m5/v2_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[72] = new pastilla(2,30,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m5/v3_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[73] = new pastilla(2,31,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m5/v4_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[74] = new pastilla(2,32,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m5/v5_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[75] = new pastilla(2,33,0,"  a+a+","../main/m6/v1_1.html","em_main","a+a+");
+pastilles[76] = new pastilla(2,34,0,"  a+a+","../main/m6/v2_1.html","em_main","a+a+");
+pastilles[77] = new pastilla(2,35,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m6/v3_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[78] = new pastilla(2,36,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m6/v4_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[79] = new pastilla(2,37,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m6/v5_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+pastilles[80] = new pastilla(2,38,0,"  Exercicis de pr&agrave;ctica   i refor&ccedil;","../main/m6/v6_1.html","em_main","Exercicis de pr&agrave;ctica i refor&ccedil;");
+</SCRIPT>
+
+
+<TITLE></TITLE>
+<FRAMESET COLS="100%,*" FRAMEBORDER=NO BORDER=0>
+<FRAME SRC="menu_js.html" NORESIZE=yes SCROLLING=no MARGINWIDTH=0 MARGINHEIGHT=0 NAME="menu2">
+<FRAME SRC="res.html" NORESIZE=yes SCROLLING=AUTO MARGINWIDTH=0 MARGINHEIGHT=0 NAME="main2">
+</FRAMESET> 
+</HTML>

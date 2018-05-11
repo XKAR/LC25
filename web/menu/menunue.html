@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<TITLE>Menú</TITLE>
+
+<SCRIPT SRC="../cap.js"></SCRIPT>
+<script>
+<!--
+
+if (document.images){
+
+	saleon = new Image();
+	saleon.src = "sor_on.gif";
+	
+	saleoff = new Image();
+	saleoff.src = "sor_off.gif";
+
+	desaon = new Image();
+	desaon.src = "des_on.gif";
+	
+	desaoff = new Image();
+	desaoff.src = "des_off.gif";
+	
+
+}
+
+
+function swapin(iname,gname){
+iname.src = gname.src;          
+}
+
+//-->
+</SCRIPT>
+<SCRIPT>
+function SetCookie(name, value, path, domain, secure) 
+{ 
+	//Expires in 1000 days
+	var exp = new Date();
+	exp.setTime(exp.getTime() + 86400000);
+	document.cookie = name + "=" + escape(value) + 
+	"; expires=" + exp.toGMTString() +
+  ((path == null)    ? "" : "; path=" + path) +
+  ((domain == null)  ? "" : "; domain=" + domain) +
+  ((secure == null)  ? "" : "; secure");
+}
+
+function GetCookie(name){ var cname = name + "=";               
+  var dc = document.cookie;               if (dc.length > 0) 
+  { begin = dc.indexOf(cname);           if (begin != -1) 
+    { begin += cname.length;             end = dc.indexOf(";", begin);
+      if (end == -1) end = dc.length;
+      return unescape(dc.substring(begin, end));    }   }  return null;
+}
+
+</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="#d8d2cc" BACKGROUND="fons.gif">
+
+<TABLE WIDTH="100%" HEIGHT="100%" BORDER=0 CELLPADDING="0" CELLSPACING="0">
+<TR><TD VALIGN="top" ALIGN="center">
+
+<SCRIPT>
+if (GetCookie("java_or_js") == "JS") top.em_menu.location='js_frameset.html';
+else if(!navigator.javaEnabled()){ setCookie("java_or_js", "JS", "/"); top.em_menu.location='js_frameset.html';}
+else
+{
+
+	var navegador = navigator.appName;
+
+	document.write('<APPLET codebase=\"../../cls\" code=menu_materials.class width=150 height=350 ARCHIVE=\"menu_materials.jar\">');
+	document.write('<PARAM name=cabbase value=\"menu_materials.cab\">');
+
+	document.write('<PARAM name=dades value=\"dades_mat\">');
+	document.write('<PARAM name=logoURL value=\"../index.html\">');
+	
+	document.write('<PARAM NAME=colorFontNivell0 value=\"0,0,0\">');
+	document.write('<PARAM NAME=colorFontNivell1 value=\"50,50,50\">');
+	document.write('<PARAM NAME=colorFontNivell2 value=\"100,100,100\">');
+	document.write('<PARAM NAME=colorFontNivell3 value=\"150,150,150\">');
+	document.write('<PARAM NAME=colorFontNivell4 value=\"200,200,200\">');
+
+	if(top.iniciMenu != null)
+		document.write('<PARAM name=pareInicial value=" ', top.iniciMenu, '">');
+	document.write('<PARAM name=carregaInici value="1">');
+	document.write('<PARAM name=imatgeFonsName value=\"fons.gif\">');
+	document.write('<PARAM name=icons value=\"0\">');
+	document.write('<PARAM name=colorFons value=\"166,202,240\">');
+	document.write('<PARAM name=colorFontMouseOver value=\"30,255,255\">');
+	document.write('<PARAM name=colorActiu value=\"255,0,0\">');
+	document.write('<PARAM name=tamanyFont value=\"11\">');
+	document.write('<PARAM name=nomFont value=\"Arial\">');
+	document.write('<PARAM name=tipusFont value=\"1\">');
+	document.write('<PARAM name=cellPadding value=\"2\">');
+	document.write('<PARAM name=alignText value=\"0\">');
+	document.write('<PARAM name=cellSpacing value=\"2\">');
+	document.write('<PARAM name=mouseOverActiu value=\"1\">');
+	document.write('<PARAM name=fletxaActiva value=\"1\">');
+	document.write('<PARAM name=inici value=\"70\">');
+	document.write('<PARAM name=idioma value=\"esp\">');	
+	document.write('<PARAM name=altLogo value=\"70\">');
+	document.write('<PARAM name=scrollX value=\"130\">');
+	document.write('<PARAM name=nivellX value=\"130\">');
+	document.write('<PARAM name=fletxaAmuntImatge value=\"amunt.gif\">');
+	document.write('<PARAM name=fletxaAvallImatge value=\"avall.gif\">');
+	document.write('<PARAM name=fletxaNivellImatge value=\"nivell.gif\">');
+
+	if (navegador=="Netscape")
+	document.write('<PARAM name=navegador value=\"Netscape\">');
+	else 
+	document.write('<PARAM name=navegador value=\"Microsoft Internet Explorer\">');
+	document.write('</APPLET>');
+}
+
+</SCRIPT>
+</FONT></td></TR>
+
+<TR><TD VALIGN="bottom" ALIGN="center">
+
+<SCRIPT>
+	if ((document.location.href.substring(0,4)) == "file"){
+		document.write("<A HREF=javascript:top.close(); onMouseOver=mouseOver('Sortir'); return true;><IMG SRC='sortir.gif' name='sale' ALT='Sortir' BORDER='0'></A>");
+	} else {	
+		document.write("<A HREF=javascript:top.close(); onMouseOver=mouseOver('Sortir'); return true;><IMG SRC='sor.gif' name='sale' ALT='Sortir' BORDER='0'></A><A HREF=javascript:parent.oWin('../../UOCMViewer/desar/opcio3.html','em_save',600,430,'yes','no','yes','no'); onMouseOver=mouseOver('Desar'); return true;><IMG SRC='des_men.gif' name='desa' ALT='Desar' BORDER='0'></A>");
+	}
+</SCRIPT></FONT></td></TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
